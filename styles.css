@@ -1,0 +1,133 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    background-color: green; 
+    margin: 0;
+    Padding: 0; 
+    }
+    
+    /* Header */ 
+    
+    header { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 20px;
+    height: 50px;
+    grid-column: 1/-1;
+    }
+    
+    /* Navigation */
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px; 
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    }
+    
+    /* Grid Container */
+    
+    .container {
+    display: grid; 
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    gap: 0;
+    width: 100%;
+    }
+    
+    /* Sidebars */ 
+    
+    .sidebar {
+        background: #ddd;
+        padding: 20px;
+    }
+    
+    .left-sidebar {
+        background-color: blue;
+        height: auto; 
+    }
+    
+    .right-sidebar{
+        background-color: red;
+        height: 400px;
+    
+    }
+    
+    /* Main Content */
+    
+    .main-content {
+    
+    background-color: chocolate;
+    padding: 20px;
+    height: auto; 
+    
+    }
+    
+    /* Full Width Box */
+    
+    .full-width-box {
+    
+    background-color: blueviolet;
+    grid-column-end: 1/-1;
+    height: auto;
+    padding: 50px;
+    }
+    
+    /*Footer */
+    
+    footer {
+    
+        background-color: cornflowerblue;
+        color: white; 
+        text-align: center;
+        padding: 20px;
+        grid-column: 1/-1;
+    }
+    
+    /* Contact - Grid Container */
+    
+    .contact-container {
+        display: grid; 
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 0;
+        width: 100%;
+        }
+        
+        /* Sidebars */ 
+        
+        .contact-sidebar {
+            background: #ddd;
+            padding: 20px;
+        }
+        
+        .contact-left-sidebar {
+        background-color: blue;
+        height: auto; 
+        }
+        
+        .contact-right-sidebar{
+            background-color: red;
+            height: 400px;
+        }
+        
+        /* Main Content */
+        
+        .contact-main-content {
+        background-color: chocolate;
+        padding: 20px;
+        height: auto; 
+        }
